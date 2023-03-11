@@ -21,7 +21,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Item 2: Create a PHP directory. Download PHP files and place them in that folder
 - Item 3: Enable PHP within IIS
 - Item 4: Download OSTicket and place the upload folder into inetpub\wwwroot folder
-- Item 5
+- Item 5: Enable extensions in IIS that OSTicket recommends
+- Item 6: Download heidi SQL and create a new database for OSTicket
 
 <h2>Installation Steps</h2>
 
@@ -57,10 +58,32 @@ We download OSTicket. When OSTicket is downloaded, we extract the upload folder 
 </p>
 
 <p>
-<img src="https://i.imgur.com/Cjby5js.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/qBsUHPg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-We download OSTicket. When OSTicket is downloaded, we extract the upload folder into the inet>wwwroot folder.  
+Within IIS, we navigate to the OSTicket site. From there we enable the recommended extensions within the PHP manager in IIS. 
+</p>
+
+<p>
+<img src="https://i.imgur.com/VdzaejC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+We download Heidi SQL to enable a connection between OSTicket and our MySQL server.
+</p>
+
+<p>
+<img src="https://i.imgur.com/VdzaejC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/zyHuvDf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+</p>
+<p>
+We create a new database within heidi and then connect it to osTicket with our credentials we created in azure earlier. We then install osTicket and clean up the setup folder.
+</p>
+
+<p>
+<img src="https://i.imgur.com/7toYCB3.png" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+And with that, OSTicket is installed!
 </p>
 
 <br />
